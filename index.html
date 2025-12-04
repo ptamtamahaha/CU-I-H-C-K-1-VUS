@@ -3,52 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trung tâm Anh ngữ Việt Mỹ</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>VUS – Trung tâm Anh văn Hội Việt Mỹ</title>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo"><img class="logo" src="./vus.jpg"></div>
-        <div>
-          <div style="font-weight:800">Trung tâm Anh ngữ Việt Mỹ</div>
-          <div style="font-size:13px;color:var(--muted)">Học tiếng Anh - Tự tin vươn ra thế giới</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#about">Giới thiệu</a>
-        <a href="#courses">Khóa học</a>
-        <a href="#teachers">Giảng viên</a>
-        <a href="#contact" class="btn-primary">Đăng ký</a>
-      </nav>
-    </header>
 
-    <main class="body-wrapper">
-      <div class="section-box">
-        <h2>Giới thiệu VUS</h2>
-        <p></p>
-      </div>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">VUS</div>
+    <nav>
+      <a href="#carousel">Hình ảnh</a>
+      <a href="#info">Thông tin</a>
+      <a href="#form">Đăng ký</a>
+    </nav>
+  </header>
 
-      <div class="section-box">
-        <h2>Chương trình học</h2>
-        <p></p>
-      </div>
+  <!-- HERO BANNER -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hệ thống Anh ngữ hàng đầu Việt Nam</h1>
+      <p>Đồng hành cùng hơn 400.000 học viên mỗi năm</p>
+      <a href="#form"><button class="subscribe-btn">Đăng ký ngay!</button></a>
+    </div>
+    <img src="hình/vus.jpg" class="hero-img">
+  </section>
 
-      <div class="section-box">
-        <h2>Liên hệ</h2>
-        <p></p>
-      </div>
-    </main>
+  <!-- CAROUSEL --> 
+  <section id="carousel" class="carousel"> 
+    <button id="backBtn"></button>
+    <div class="gallery"> 
+      <div> <span><img src="hình/images (7).jpeg"></span> 
+            <span><img src="hình/vus.jpg"></span> 
+            <span><img src="hình/images (5).jpeg"></span> 
+      </div> 
+      <div> <span><img src="hình/images (4).jpeg"></span> 
+            <span><img src="hình/images (3).jpeg"></span> 
+            <span><img src="hình/images (6).jpeg"></span> 
+      </div> 
+    </div> 
+    <button id="nextBtn"></button> 
+  </section>
+  <!-- INFO -->
+  <section id="info" class="info-box">
+  <h2 class="section-title">Giới thiệu VUS</h2>
 
-    <footer>
-      © 2025 Trung tâm Anh ngữ Việt Mỹ
-    </footer>
+  <div class="info-container">
+    <div class="info-box-item">
+      <h3>Lịch sử</h3>
+      <p>Thành lập từ năm 1990, VUS là hệ thống đào tạo Anh ngữ chuẩn quốc tế lớn nhất Việt Nam, đồng hành cùng hàng triệu học viên trong hơn 30 năm phát triển.</p>
+    </div>
+
+    <div class="info-box-item">
+      <h3>Chương trình đào tạo</h3>
+      <p>VUS cung cấp lộ trình học từ mẫu giáo đến người lớn, bao gồm Anh ngữ thiếu nhi, giao tiếp quốc tế, doanh nghiệp, và luyện thi IELTS theo chuẩn quốc tế.</p>
+    </div>
   </div>
+
+  <div class="info-container">
+    <div class="info-box-item">
+      <h3>Chất lượng giảng dạy</h3>
+      <p>Hệ thống giáo viên được tuyển chọn khắt khe, 100% đạt chuẩn TESOL/CELTA, kết hợp công nghệ giảng dạy hiện đại giúp tối ưu trải nghiệm học tập.</p>
+    </div>
+
+    <div class="info-box-item">
+      <h3>Đối tác & chứng nhận quốc tế</h3>
+      <p>VUS là đối tác chiến lược của NEAS – tổ chức đánh giá chất lượng Anh ngữ quốc tế, đảm bảo môi trường học đạt chuẩn từ cơ sở vật chất đến phương pháp.</p>
+    </div>
+  </div>
+
+  <div class="info-container">
+    <div class="info-box-item">
+      <h3>Hệ thống trung tâm</h3>
+      <p>VUS sở hữu hơn 70 trung tâm trên toàn quốc, bao phủ TP.HCM, Hà Nội, Đà Nẵng, Bình Dương, Khánh Hòa… mang cơ hội học tập đến mọi gia đình.</p>
+    </div>
+  </div>
+
+</section>
+
+  <!-- FORM -->
+  <section id="form" class="form-box">
+    <h2 class="section-title">Đăng ký học viên</h2>
+
+    <label>Họ và tên</label>
+    <input placeholder="Nguyễn Văn A">
+
+    <label>Số điện thoại</label>
+    <input placeholder="(+84) 9xx xxx xxx">
+
+    <label>Chọn khóa học</label>
+    <select>
+      <option>Thiếu nhi</option>
+      <option>Giao tiếp</option>
+      <option>IELTS</option>
+    </select>
+
+    <button class="submit-btn">Gửi đăng ký</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 VUS – Anh văn Hội Việt Mỹ  
+    <p>Thông tin tham khảo từ <a href="https://vus.edu.vn/" target="_blank">VUS.edu.vn</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
